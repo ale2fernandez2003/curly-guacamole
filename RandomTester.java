@@ -60,7 +60,7 @@ public class RandomTester
             max = min;
             min = num;
         }
-        int randomNumber = random.nextInt(max) + min;
+        int randomNumber = random.nextInt(max - min) + min + 1;
         System.out.println(randomNumber);
     }
 }
