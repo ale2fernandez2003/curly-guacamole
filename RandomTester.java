@@ -48,4 +48,19 @@ public class RandomTester
             System.out.println(talVez);
         }
     }
+    
+    public void getNumeroEntre1Y (int max){
+        int randomNumber = random.nextInt(max) + 1;
+        System.out.println(randomNumber);
+    }
+    
+    public void getNumeroEntre (int min, int max){
+        if (max < min){
+            int num = max;
+            max = min;
+            min = num;
+        }
+        int randomNumber = random.nextInt(max) + min;
+        System.out.println(randomNumber);
+    }
 }
